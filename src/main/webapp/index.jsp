@@ -3,7 +3,7 @@
 <body>
 <h2>Hello World!</h2>
 <div id="versionPanel">
-Версия: <%= VersionInfo.getInstance().getFullVersion() %>
+Версия <%= VersionInfo.getInstance().getFullVersion() %>
 </div>
 </body>
 </html>

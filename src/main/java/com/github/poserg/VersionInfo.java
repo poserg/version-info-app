@@ -74,11 +74,17 @@ public class VersionInfo {
             boolean isRevisionNotEmpty = revision != null && !revision.isEmpty();
             if (isRevisionNotEmpty) {
                 version += "." + revision;
-                fullVersion += "." + revision;
+                // fullVersion += "." + revision;
             }
 
             if (isRevisionNotEmpty && changeSet != null && !changeSet.isEmpty()) {
-                fullVersion += "(" + changeSet + ")";
+                StringBuilder sb = new StringBuilder();
+                String dash = "-";
+                sb.append(dash);
+                sb.append(buildDate);
+                sb.append(dash);
+                sb.append(changeSet);
+                fullVersion += sb.toString();
             }
 
         } catch (Exception e) {
