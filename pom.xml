@@ -5,7 +5,7 @@
 	<artifactId>verion-info-app</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>jsp-test-app Maven Webapp</name>
+	<name>version-info-app Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<profiles>
@@ -42,7 +42,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>jsp-test-app</finalName>
+		<finalName>version-info-app</finalName>
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
